@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Baskervville+SC&family=Cabin:ital,wght@0,400..700;1,400..700&family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Baskervville+SC&family=Black+Ops+One&family=Cabin:ital,wght@0,400..700;1,400..700&family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Assistant:wght@200..800&family=Baskervville+SC&family=Black+Ops+One&family=Cabin:ital,wght@0,400..700;1,400..700&family=Caveat:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.801);
+    font-family: "Black Ops One", system-ui;
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2px 5px;
+    /* background-color: transparent; */
+}
+
+nav {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+}
+
+.Hero {
+    background-image: url("5675706.jpg");
+    /* background-image: url("https://wallpapercave.com/wp/wp5314872.jpg"); */
+    background-size: cover;
+    background-attachment: fixed;
+    cursor: cell;
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+    position: relative;
+
+}
+
+
+.hero-details {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+.hero-details h1,
+.hero-details h2 {
+    text-shadow: -10px 4px 2px black;
+    font-size: 8vh;
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+
+
+}
+
+
+.hero-details h1 {
+    margin-left: -100px;
+}
+
+.hero-details h2 {
+    margin-left: 100px;
+}
+
+.btn-group button {
+    height: 50px;
+    gap: 10px;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-group button i {
+    font-size: 22px;
+}
+
+.About-left {
+    position: relative;
+
+}
+
+/* .img-about-container {
+    width: 500px;
+    height: 500px;
+    background-color: #c7c7c7;
+
+} */
+
+.About-left img {
+    position: absolute;
+    width: 700px;
+    left: 100px;
+    top: 150px;
+
+}
+
+.about-right h1 {
+    cursor: none;
+    position: relative;
+    font-size: 6vh;
+    color: white;
+    text-shadow: 0px 5px 2px black;
+}
+
+.about-right p {
+    cursor: none;
+}
+
+.about-right h1:hover::after {
+    width: 250px;
+    background-color: #C43D0F;
+}
+
+.about-right h1::after {
+    content: "";
+    transition: .4s ease;
+    width: 0px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+#about {
+    background-size: cover;
+    background-image: url("https://wallpaperboat.com/wp-content/uploads/2019/12/dark-color-11.jpg");
+    /* background-image: url("https://png.pngtree.com/background/20230616/original/pngtree-the-painting-of-a-jungle-is-in-dark-shade-picture-image_3623317.jpg"); */
+    background-attachment: fixed;
+}
+
+/* .particals{
+    /* display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(240, 240, 240, 0.466);
+} */
+.particals {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.144);
+    box-shadow: 0 0 30px rgb(255, 0, 0);
+
+    position: absolute;
+}
+
+.h300 {
+    height: 300px;
+}
+
+#Projects {
+    position: relative;
+    background-image: url("https://www.color-meanings.com/wp-content/uploads/squares-shades-black-colors.jpeg");
+    background-size: contain;
+    background-attachment: fixed;
+
+
+}
+
+#Projects a {
+    width: 200px;
+    text-decoration: none;
+    padding: 4px 5px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    background-color: #C43D0F;
+    border: 1px solid black;
+    margin-left: 30px;
+    margin-top: 60px;
+}
+
+.scroll-Arrow {
+    position: absolute;
+    right: 200px;
+    top: 300px;
+    color: white;
+    font-size: 80px;
+    font-weight: 100;
+
+    animation: Move-updown 2s infinite;
+}
+
+@keyframes Move-updown {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(100px);
+    }
+}
+
+.hero-Img {
+    position: absolute;
+    bottom: 10px;
+    right: -50px;
+    width: 700px;
+
+}
+
+#ContactUs {
+    padding: 200px;
+    height: 800px;
+}
+
+.hero-Img img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.projects-box img {
+    object-fit: cover;
+}
+
+.contactus-Details-Personal {
+    height: 100px;  
+    background-color: red;
+}
